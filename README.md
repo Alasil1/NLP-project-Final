@@ -83,31 +83,3 @@ Ensure the tokenized dataset exists in data/processed/tokenized_samsum/.
 Training uses mixed precision (fp16=True) and requires a GPU for optimal performance.
 The API runs in a separate thread; stop the script with Ctrl+C to terminate.
 
-Contribution
-We welcome contributions to improve this project. Please follow these guidelines:
-1. Coding Standards
-
-Adhere to PEP 8 and PEP 257 for style and docstrings.
-Use type hints with the typing module.
-Format code with black and lint with flake8:black src/
-flake8 src/
-
-
-Write meaningful comments for complex logic.
-Follow the project structure (e.g., save models in models/, data in data/).
-
-2. Submission Process
-
-Fork the repository and create a feature branch:git checkout -b feature/your-feature-name
-
-
-Commit changes with clear messages:git commit -m "Add feature: description of changes"
-
-
-Push to your fork and submit a pull request to the main repository.
-Include a description of changes and reference any related issues.
-
-3. Testing
-
-Test changes locally to ensure training, evaluation, and API functionality work as expected.
-
