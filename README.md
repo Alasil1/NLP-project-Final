@@ -53,9 +53,25 @@ The evaluation is included in the main script execution. ROUGE scores (rouge1, r
 3. Use the Summarization API
 The script starts a Flask API on http://0.0.0.0:5000 . To summarize a dialogue:
 
-Send a POST request to the /summarize endpoint with a JSON payload:curl -X POST -H "Content-Type: application/json" \
-     -d '{"dialogue": "Alice: Hi, want to meet up later? Bob: Sure, how about 6 PM at the cafe?"}' \
-     <ngrok-public-url>/summarize
+Send a POST request to the /summarize endpoint 
+for example: 
+
+$dialogue = @"
+rony: Hey, do you wanna go out tomorrow?
+alasil: Lemme check
+alasil: Sorry, i won't be able to go out as i will be with my family 
+rony: what about Thursday 
+alasil : yes Thursday is ok 
+rony : ok it is Thursday then 
+alasil: bye
+rony : bye
+"@
+
+$body = @{
+    dialogue = $dialogue
+} | ConvertTo-Json
+
+Invoke-RestMethod -Uri "http://localhost:5000/summarize" -Method POST -ContentType "application/json" -Body $body
 
 
 Response example:{"summary": "Alice and Bob plan to meet at 6 PM at the cafe."}
