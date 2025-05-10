@@ -1,6 +1,6 @@
-Dialogue Summarization with BART
-This project fine-tunes a facebook/bart-base model on the SAMSum dataset for dialogue summarization, evaluates its performance using ROUGE metrics, and exposes a summarization API using Flask and ngrok. The codebase adheres to the coding conventions outlined in the DSAI 353 course, ensuring PEP 8 compliance, proper documentation, and a modular structure.
-Project Structure
+**Dialogue Summarization with BART
+**
+
 dialogue_summarization/
 ├── data/
 │   ├── raw/                  # Raw SAMSum dataset
