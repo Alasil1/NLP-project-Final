@@ -1,0 +1,8 @@
+datasets
+transformers
+torch
+evaluate
+numpy
+tqdm
+flask
+pyngrok
