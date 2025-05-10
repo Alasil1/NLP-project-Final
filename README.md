@@ -8,7 +8,7 @@ Access to the SAMSum dataset (available on Hugging Face or Kaggle)
 
 Setup
 1. Clone the Repository
-git clone <repository-url>
+git clone <https://github.com/Alasil1/NLP-project-Final>
 cd dialogue_summarization
 
 2. Create a Virtual Environment
